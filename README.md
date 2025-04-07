@@ -1,5 +1,7 @@
 1 ამოცანა 
 
+ფანქარს დააჭირე და მერე დააკოპირე
+
 using System;
 
 class Program
