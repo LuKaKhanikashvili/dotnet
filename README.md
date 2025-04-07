@@ -1,7 +1,40 @@
+using System;
+using System.Collections.Generic;
 
- 5 ამოცანა
- შექმენით Generic კლასი "MyCollection<T>".ის უნდა შეიცავდეს შემდეგ მეთოდებს:მეთოდი "AddItem",რომელიც ამატებს List-ში T ტიპის ელემენტებს.მეთოდი "GetItem",რომელიც აბრუნებს ელემენტს 
- List-დან გადაცემული ინდექსის მიხედვით.შექმენით "MyCollection"-ის ობიექტი string ტიპის Generic-ით და დაამატეთ რამდენიმე ელემენტი სიაში.გამოიყენეთ მეთოდი "GetItem",რათა ამოიღოთ 
- და ამობეჭდოთ ელემენტი სიიდან მოცემული ინდექსის საფუძველზე.
+public class MyCollection<T>
+{
+    private List<T> items = new List<T>();
 
-ბოლოა ვსო.გაიხარე
+    // ელემენტის დამატება
+    public void AddItem(T item)
+    {
+        items.Add(item);
+    }
+
+    // ელემენტის ამოღება ინდექსით
+    public T GetItem(int index)
+    {
+        if (index >= 0 && index < items.Count)
+        {
+            return items[index];
+        }
+        else
+        {
+            throw new IndexOutOfRangeException("მოცემული ინდექსი არასწორია.");
+        }
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // MyCollection<string> ობიექტის შექმნა
+        MyCollection<string> names = new MyCollection<string>();
+
+        // ელემენტების დამატება
+        names.AddItem("Ana");
+        names.AddItem("Giorgi");
+        names.AddItem("Luka");
+
+        // ელემენტის ამოღება ინდექსით და დაბეჭ
