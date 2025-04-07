@@ -1,41 +1,7 @@
-using System;
 
-// Abstract class
-public abstract class Bird
-{
-    // Abstract method
-    public abstract string MakeSound();
-}
+ 5 ამოცანა
+ შექმენით Generic კლასი "MyCollection<T>".ის უნდა შეიცავდეს შემდეგ მეთოდებს:მეთოდი "AddItem",რომელიც ამატებს List-ში T ტიპის ელემენტებს.მეთოდი "GetItem",რომელიც აბრუნებს ელემენტს 
+ List-დან გადაცემული ინდექსის მიხედვით.შექმენით "MyCollection"-ის ობიექტი string ტიპის Generic-ით და დაამატეთ რამდენიმე ელემენტი სიაში.გამოიყენეთ მეთოდი "GetItem",რათა ამოიღოთ 
+ და ამობეჭდოთ ელემენტი სიიდან მოცემული ინდექსის საფუძველზე.
 
-// Sparrow class inheriting from Bird
-public class Sparrow : Bird
-{
-    public override string MakeSound()
-    {
-        return "Chirp.";
-    }
-}
-
-// Pigeon class inheriting from Bird
-public class Pigeon : Bird
-{
-    public override string MakeSound()
-    {
-        return "Coo.";
-    }
-}
-
-// Main Program
-class Program
-{
-    static void Main()
-    {
-        // Sparrow object
-        Bird sparrow = new Sparrow();
-        Console.WriteLine("Sparrow says: " + sparrow.MakeSound());
-
-        // Pigeon object
-        Bird pigeon = new Pigeon();
-        Console.WriteLine("Pigeon says: " + pigeon.MakeSound());
-    }
-}
+ბოლოა ვსო.გაიხარე
