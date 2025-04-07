@@ -1,22 +1,5 @@
-1 ამოცანა 
-
-ფანქარს დააჭირე და მერე დააკოპირე
-
-using System;
-
-class Program
-{
-    static void Main()
-    {
-        // ცვლადების ინიციალიზაცია
-        int quantity = 10;
-        string itemName = "ყავა";
-
-        // ციკლი 1-დან 5-მდე
-        for (int i = 1; i <= 5; i++)
-        {
-            Console.WriteLine($"პროდუქტი: {itemName}, იტერაცია: {i}");
-        }
-    }
-}
-
+2ამოცანა
+შექმენით კლასი სახელად "Employee" შემდეგი მახასიათებლით:private integer field "_employeeName".Public string property "Salary" get and set  აქსესუარებით.
+კონსტრუქტორი,რომელიც იღებს ორ პარამეტრს სახელის და ხელფასის ინიციალიზაციისთვის.შექმენით public მეთოდი სახელწოდებით "DisplayInfo",რომელიც
+ აბრუნებს შეტყობინებას "Hi,I'm[_employeeName] and I earn [Salary] per year".
+ შექმენით "Employee" კლასის ობიექტი,სახელით და ხელფასით და გამოიძახეთ "DisplayInfo" მეთოდი.
