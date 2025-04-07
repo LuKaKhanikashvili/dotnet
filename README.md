@@ -1,39 +1,9 @@
-2ამოცანა
+ 3 ამოცანა
 
-
-using System;
-
-public class Employee
-{
-    // private field
-    private string _employeeName;
-
-    // public property
-    public string Salary { get; set; }
-
-    // constructor
-    public Employee(string name, string salary)
-    {
-        _employeeName = name;
-        Salary = salary;
-    }
-
-    // public method
-    public string DisplayInfo()
-    {
-        return $"Hi, I'm {_employeeName} and I earn {Salary} per year.";
-    }
-}
-
-class Program
-{
-    static void Main()
-    {
-        // create object of Employee class
-        Employee employee = new Employee("Nino", "$50,000");
-
-        // call DisplayInfo method
-        string info = employee.DisplayInfo();
-        Console.WriteLine(info);
-    }
-}
+ შექმენით კლასი სახელწოდებით "Item" შემდეგით:protected double property "Price".კონსტრუქტორი,რომელიც ახდენს "Price"-ის ინიციალიზაციას და ანიჭებს 0-ს.
+ შექმენით "Item"-ის შვილობილი კლასი სახელწოდებით "Fruit" ,შემდეგით: ორი private field "_weightInKg" და "prioceOfOneKg" და მათი სახელის შესაბამისი property-ები.
+ გადატვირთეთ (method overloading) მეთოდი "CalculateTotalPrice()" კლასში "Fruit" ვერსიით,რომელიც იღებს წონისა და ერთი კილოგრამის ფასის ("_prioceOfOneKg")
+ პარამეტრებს  და შესაბამისად ითვლის საბოლოო გასს.შექმენით შვილობილი კლასი სახელწოდებით "Electronics",რომელიც ასევე მემკვიდრეობით იღებს "Item"-ს შემდეგით:private int field "_quantity"
+ და private double field"_oneUnitPrice" მათი შესაბამისი property.გადატვირთეთ "CalculateTotalPrice()" მეთოდი "Electronics" კლასში ვერსიით,რომელიც იღებს ერთეულის ფასის და რაოდენობის პარამეტრს
+ და შესაბამისად ითვლის საბოლოო ფასს.შექმენით "Fruit" და "Electronics" კლასების ობიექტები,გამოთვალეთ და დაბეჭდეთ როგორც ხილს,ასევე ელექტრონული ნივთის ჯამური ფასები გადატვირთული
+ "CalculateTotalPrice()" მეთოდების გამოყენებით.
